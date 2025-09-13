@@ -1,0 +1,7 @@
+package com.ng.sbeans;
+
+public record SalarySlip(double grossSalary,double netSalary,double deductions) {
+
+		
+		
+}

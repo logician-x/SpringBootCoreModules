@@ -1,0 +1,18 @@
+package com.ng.sbeans;
+
+import java.util.Random;
+
+import org.springframework.stereotype.Component;
+
+@Component("mrfBat")
+public final class MRF implements ICricketBat {
+
+	public MRF() {
+		System.out.println("MRFBat::0-param constructor");
+	}
+	@Override
+	public int scoreRuns() {
+		return new Random().nextInt(250);
+	}
+
+}

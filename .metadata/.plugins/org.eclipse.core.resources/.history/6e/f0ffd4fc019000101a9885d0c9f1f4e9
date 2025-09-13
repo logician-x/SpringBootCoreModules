@@ -1,0 +1,13 @@
+package com.ng.sbeans;
+
+import org.springframework.stereotype.Component;
+
+@Component("localStorage")
+public class S3StorageService implements StorageService {
+
+	@Override
+	public String storeFile(String fileName) {
+		return "Storing file report.pdf in Local Storage";
+	}
+
+}

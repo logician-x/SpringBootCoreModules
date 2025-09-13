@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.SpringBootApplication"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.SpringApplication"/>
+    <fullyQualifiedTypeName name="com.ng.sbeans.SeasonFinder"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="com.ng.sbeans.DiscountService"/>
+    <fullyQualifiedTypeName name="com.ng.sbeans.NumberService"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.nt.sbeans.ICricketBat"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="com.nt.sbeans.Cricketer"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.ImportResource"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.FactoryBean"/>
+    <fullyQualifiedTypeName name="com.ng.sbeans.ICricketBat"/>
+    <fullyQualifiedTypeName name="com.ng.sbeans.OXBridgeBall"/>
+    <fullyQualifiedTypeName name="java.awt.print.Book"/>
+    <fullyQualifiedTypeName name="com.ng.sbeans.Book"/>
+    <fullyQualifiedTypeName name="com.ng.sbeans.FineService"/>
+    <fullyQualifiedTypeName name="com.ng.sbeans.PayrollService"/>
+    <fullyQualifiedTypeName name="com.ng.sbeans.GreetingService"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+    <fullyQualifiedTypeName name="com.ng.sbeans.GreetingManager"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="com.ng.sbeans.StorageService"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ConfigurableApplicationContext"/>
+    <fullyQualifiedTypeName name="com.ng.sbeans.StorageManager"/>
+</qualifiedTypeNameHistroy>

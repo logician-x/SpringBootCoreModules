@@ -1,0 +1,6 @@
+package com.ng.sbeans;
+
+public record Employee(String name, String designation,double basic,
+		double hra, double allowance,double tax) {
+			
+}

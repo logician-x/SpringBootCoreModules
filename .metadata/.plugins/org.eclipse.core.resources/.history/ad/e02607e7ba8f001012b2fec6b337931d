@@ -1,0 +1,13 @@
+package com.ng.sbeans;
+
+import org.springframework.stereotype.Component;
+
+@Component("fineService")
+public class FineService {
+
+	public double calculateFine(int daysLate, double finePerDay)
+	{
+		return  dayLate*finePerDay;
+	}
+	
+}

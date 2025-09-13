@@ -1,0 +1,38 @@
+package com.ng;
+
+import com.ng.sbeans.Employee;
+import com.ng.sbeans.PayrollService;
+
+import java.util.Scanner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class LibraryLateFeeCalculatorApplication {
+
+	public static void main(String[] args) {
+		try (ConfigurableApplicationContext ctx = SpringApplication.run(LibraryLateFeeCalculatorApplication.class,
+				args); Scanner sc = new Scanner(System.in);) {
+
+			   System.out.println("Enter Employee Name:");
+			    String name = sc.next();
+				System.out.println("Enter Designation:");
+				String designation = sc.next();
+				System.out.println("Enter Basic Salary:");
+				double bsalary = sc.nextDouble();
+				System.out.println("Enter HRA:");
+				double hra = sc.nextDouble();
+				System.out.println("Enter Allowances:");
+				double allowances = sc.nextDouble();
+				System.out.println("Enter Tax:");
+				double tax=  sc.nextDouble();
+				
+			
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
+	}
+
+}

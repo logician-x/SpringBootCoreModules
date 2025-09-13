@@ -1,0 +1,14 @@
+package com.nt.sbeans;
+
+import org.springframework.stereotype.Component;
+
+@Component("mrfbat")
+public class MRF implements ICricketBat {
+
+	@Override
+	public String scoreRuns() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

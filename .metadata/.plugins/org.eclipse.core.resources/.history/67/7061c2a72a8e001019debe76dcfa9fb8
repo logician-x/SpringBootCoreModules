@@ -1,0 +1,8 @@
+package com.ng;
+
+import org.springframework.stereotype.Component;
+
+@Component("nservice")
+public class NumberService {
+
+}

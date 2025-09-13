@@ -1,0 +1,23 @@
+package com.ng;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.ImportResource;
+
+import com.ng.sbeans.Cricketer;
+
+@SpringBootApplication
+public class SpringProj03Application {
+
+	public static void main(String[] args) {
+		try(ConfigurableApplicationContext ctx = SpringApplication.run(SpringProj03Application.class, args);){
+				Cricketer cricketer = ctx.getBean(Cricketer.class);
+				System.out.println(cricketer.ball("Nageshwar"));;
+				System.out.println(cricketer.batting("Manmath"));;
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

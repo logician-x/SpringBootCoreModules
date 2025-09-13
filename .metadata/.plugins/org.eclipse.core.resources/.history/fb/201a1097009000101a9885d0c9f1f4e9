@@ -1,0 +1,17 @@
+package com.ng.sbeans;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("englishGreet")
+public class EnglishGreetingService implements GreetingService {
+
+	@Value("${greet.english}")
+	private String greet;
+	
+	@Override
+	public String greet(String name) {
+		return greet+" "+name;
+	}
+
+}

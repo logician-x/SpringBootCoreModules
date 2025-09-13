@@ -1,0 +1,13 @@
+package com.ng.sbeans;
+
+import org.springframework.stereotype.Component;
+
+@Component("fineService")
+public class PayrollService {
+
+	public double calculateNetSalary(double basic, double hra, double allowance, double tax)
+	{
+		
+	}
+	
+}

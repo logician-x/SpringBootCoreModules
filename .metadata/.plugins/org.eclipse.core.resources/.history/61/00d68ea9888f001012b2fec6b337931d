@@ -1,0 +1,31 @@
+package com.ng.sbeans;
+
+import org.springframework.beans.factory.FactoryBean;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("batFactory")
+public class BatFactory implements FactoryBean<ICricketBat>{
+
+	@Value("${cktr.bat}")
+	private String bat;
+	
+	@Override
+	public ICricketBat getObject() throws Exception {
+			switch(bat) {
+			
+			case "gm":return new GM(); 
+			case "mrf":return new MRF();
+			case "ss":return new SSBat(); 
+			default:throw new IllegalArgumentException();
+			}
+	}
+
+	@Override
+	public Class<?> getObjectType() {
+		return ICricketBat.class;
+	}
+
+			
+		
+}

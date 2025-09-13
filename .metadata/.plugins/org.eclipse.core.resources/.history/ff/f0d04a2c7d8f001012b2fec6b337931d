@@ -1,0 +1,11 @@
+package com.nt.sbeans;
+
+public class MRF implements ICricketBat {
+
+	@Override
+	public String scoreRuns() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.ng.sbeans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component("gm")
+public class GreetingManager {
+
+	@Autowired 
+	@Qualifier("englishGreetingService")
+	private GreetingService service;
+		
+     public void	showGreeting(String name) {
+		
+    	 	System.out.println(service.greet(name));;
+    	 	
+	}
+}

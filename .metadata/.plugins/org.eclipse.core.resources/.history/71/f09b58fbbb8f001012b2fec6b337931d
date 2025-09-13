@@ -1,0 +1,30 @@
+package com.ng;
+
+import java.awt.print.Book;
+import java.util.Scanner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class LibraryLateFeeCalculatorApplication {
+
+	public static void main(String[] args) {
+		try (ConfigurableApplicationContext ctx = SpringApplication.run(LibraryLateFeeCalculatorApplication.class,
+				args); Scanner sc = new Scanner(System.in);) {
+
+			System.out.println("Enter Book Title:");
+			String title = sc.nextLine();
+			System.out.println("Enter Days Late:");
+			int daysLate = Integer.parseInt(sc.next());
+			System.out.println("Enter Fine per Day:");
+			double fine = sc.nextDouble();
+			Book book = new Book();
+			
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
+	}
+
+}

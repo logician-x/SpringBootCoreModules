@@ -1,0 +1,11 @@
+package com.ng.sbeans;
+
+public class LocalStorageService implements StorageService {
+
+	@Override
+	public String storeFile(String fileName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

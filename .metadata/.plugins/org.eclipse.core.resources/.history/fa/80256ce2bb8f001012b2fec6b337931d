@@ -1,0 +1,23 @@
+package com.ng;
+import java.util.Scanner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class LibraryLateFeeCalculatorApplication {
+
+	public static void main(String[] args) {
+		try (ConfigurableApplicationContext ctx = SpringApplication.run(LibraryLateFeeCalculatorApplication.class,
+				args);
+				Scanner sc = new Scanner(System.in);) {
+
+				
+			
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
+	}
+
+}

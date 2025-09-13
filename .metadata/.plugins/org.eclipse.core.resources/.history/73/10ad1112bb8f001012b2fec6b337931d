@@ -1,0 +1,10 @@
+package com.ng.sbeans;
+
+public class Book {
+
+		
+	private String title;
+	private int daysLate;
+	private double finePerDay;
+	
+}

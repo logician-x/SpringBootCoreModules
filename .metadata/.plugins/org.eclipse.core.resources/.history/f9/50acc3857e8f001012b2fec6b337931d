@@ -1,0 +1,11 @@
+package com.nt.sbeans;
+
+public class SSBall implements ICricketBall {
+
+	@Override
+	public String bowling() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

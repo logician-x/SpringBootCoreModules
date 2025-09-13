@@ -1,0 +1,12 @@
+package com.ng.sbeans;
+
+import org.springframework.stereotype.Component;
+
+@Component("gdStorage")
+public class GoogleDriveStorageService implements StorageService {
+
+	@Override
+	public String storeFile(String fileName) {
+		return "Storing file "+fileName+"in GDStorage Storage";
+	}
+}

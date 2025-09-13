@@ -1,0 +1,11 @@
+package com.ng.sbeans;
+
+public class HindiGreetingService implements GreetingService {
+
+	@Override
+	public String greet(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
