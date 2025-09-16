@@ -6,7 +6,7 @@ import com.ng.dao.DAO;
 import com.ng.sbeans.Employee;
 
 
-import java.util.List;
+import java.util.List;  
 
 @Service
 public class EmployeeService implements IEmployeeManagementService{

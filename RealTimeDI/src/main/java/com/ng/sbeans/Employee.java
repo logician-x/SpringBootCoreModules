@@ -7,7 +7,7 @@ import lombok.Data;
 public class Employee {
 
 	private Long id;
-	private String name;
+	private String name; 
 	private String job;
 	private Double salary;
 	private Double grossSalary;

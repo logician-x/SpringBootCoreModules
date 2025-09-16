@@ -8,7 +8,7 @@ import com.ng.sbeans.Employee;
 import com.ng.service.IEmployeeManagementService;
 
 @Controller("empController")
-public class EmployeeOperationsController {
+public class EmployeeOperationsController {  
 
 	@Autowired
 	private IEmployeeManagementService service;
