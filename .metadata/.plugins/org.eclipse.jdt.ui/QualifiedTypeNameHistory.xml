@@ -14,7 +14,6 @@
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="com.nt.sbeans.Cricketer"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.ImportResource"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.FactoryBean"/>
     <fullyQualifiedTypeName name="com.ng.sbeans.ICricketBat"/>
     <fullyQualifiedTypeName name="com.ng.sbeans.OXBridgeBall"/>
     <fullyQualifiedTypeName name="java.awt.print.Book"/>
@@ -24,10 +23,22 @@
     <fullyQualifiedTypeName name="com.ng.sbeans.GreetingService"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
     <fullyQualifiedTypeName name="com.ng.sbeans.GreetingManager"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="com.ng.sbeans.StorageService"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
-    <fullyQualifiedTypeName name="org.springframework.context.ConfigurableApplicationContext"/>
     <fullyQualifiedTypeName name="com.ng.sbeans.StorageManager"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.FactoryBean"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="com.ng.sbeans.CarFactory"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="javax.sql.DataSource"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.ng.dao.DAO"/>
+    <fullyQualifiedTypeName name="com.ng.sbeans.Employee"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ConfigurableApplicationContext"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="com.ng.service.EmployeeService"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
 </qualifiedTypeNameHistroy>
