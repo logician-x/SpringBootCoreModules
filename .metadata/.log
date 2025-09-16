@@ -4556,3 +4556,61 @@ org.eclipse.jgit.errors.TransportException: https://ghp_MXPjZbRMl6SeDNlpGF2o9nfp
 
 !ENTRY org.eclipse.egit.ui 4 0 2025-09-16 13:32:24.069
 !MESSAGE Can't connect to any repository: https://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@github.com/logician-x/SpringBootCoreModules.git (https://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@github.com/logician-x/SpringBootCoreModules.git: not authorized)
+
+!ENTRY org.eclipse.egit.core 4 0 2025-09-16 13:35:02.524
+!MESSAGE An exception occurred during push on URI https://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@github.com/logician-x/SpringBootCoreModules.git: https://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@github.com/logician-x/SpringBootCoreModules.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://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@github.com/logician-x/SpringBootCoreModules.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:694)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:636)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:540)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1533)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-09-16 13:35:02.526
+!MESSAGE Can't connect to any repository: https://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@github.com/logician-x/SpringBootCoreModules.git (https://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@github.com/logician-x/SpringBootCoreModules.git: not authorized)
+
+!ENTRY org.eclipse.egit.core 4 0 2025-09-16 13:38:12.337
+!MESSAGE An exception occurred during push on URI https://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@github.com/logician-x/SpringBootCoreModules.git: https://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@github.com/logician-x/SpringBootCoreModules.git: connection failed
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://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@github.com/logician-x/SpringBootCoreModules.git: connection failed
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:738)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:636)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:540)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1533)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.NoRouteToHostException: No route to host: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.execute(HttpClientConnection.java:281)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.getResponseCode(HttpClientConnection.java:260)
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:232)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:663)
+	... 8 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-09-16 13:38:12.338
+!MESSAGE Can't connect to any repository: https://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@github.com/logician-x/SpringBootCoreModules.git (https://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@github.com/logician-x/SpringBootCoreModules.git: connection failed)
