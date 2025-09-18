@@ -1,3 +1,0 @@
-spring.application.name=Greeting-Service-with-Qualifier
-
-greet.english = Namaste, Rahman!

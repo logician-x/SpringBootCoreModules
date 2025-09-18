@@ -1,7 +1,0 @@
-package com.ng.sbeans;
-
-public class GreetingService {
-
-	public String greet(String name);
-	
-}

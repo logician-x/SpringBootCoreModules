@@ -1,5 +1,0 @@
-package com.ng.sbeans;
-
-public interface StorageService {
-
-}
