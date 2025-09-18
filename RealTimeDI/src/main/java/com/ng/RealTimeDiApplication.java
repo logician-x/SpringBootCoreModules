@@ -1,7 +1,5 @@
 package com.ng;
 
-
-
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
@@ -22,6 +20,8 @@ import com.ng.sbeans.Employee;
 public class RealTimeDiApplication {
 
 	public static void main(String[] args) {
+		
+		//start of main method
 		try(ConfigurableApplicationContext ctx =SpringApplication.run(RealTimeDiApplication.class, args);
 				Scanner sc = new Scanner(System.in);){
 				 System.out.println("RealTimeDiApplication.main()");
@@ -49,10 +49,23 @@ public class RealTimeDiApplication {
 					  			    });
 					  			    System.out.println("===============================================");
 				  });
-							
+				  
+				  
+				  //insert operation
+				  System.out.println("Enter employee name::");
+				  String name = sc.next();
+				  System.out.println("Enter  job::");
+				  String job = sc.next();
+				  System.out.println("Enter salary::");
+				  Double salary = sc.nextDouble();
+				  
+				  Employee emp = new Employee(name,job,salary);
+				  System.out.println(controller.insertEmployee(emp));
+				  
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
+		//end of main method
 	}
 
 }

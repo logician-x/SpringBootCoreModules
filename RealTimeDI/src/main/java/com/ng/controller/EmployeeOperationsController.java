@@ -15,13 +15,17 @@ public class EmployeeOperationsController {
 
 	public List<Employee> showAllEmployeeOnDesg(String desg1, String desg2, String desg3) throws Exception {
 
-		try {
-		
+		try {		
 			System.out.println("EmployeeOperationsController.showAllEmployeeOnDesg()");
 			return service.fetchEmpsByDesgs(desg1, desg2, desg3);
 		} catch (Exception e) {
 			throw e;
 		}
+	}
+	
+	
+	public String insertEmployee(Employee emp)throws Exception {
+			return service.insertEmployee(emp);
 	}
 
 }

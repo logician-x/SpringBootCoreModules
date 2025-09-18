@@ -28,5 +28,11 @@ public class EmployeeService implements IEmployeeManagementService{
 			});
 			return list;
 	}
+
+	@Override
+	public String insertEmployee(Employee emp) throws Exception {
+			return dao.insert(emp)>0?"Inserted Successfully":"Failded to insert";
+	}
+	
 	
 }

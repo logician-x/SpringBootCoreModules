@@ -15,7 +15,7 @@ import com.ng.sbeans.Employee;
 public class DAO {
 
 	private static final String SELECT =  "select empno,ename,job,sal from employee where job IN(?,?,?)";
-	
+	private static final String INSERT  =  "insert into employee(empno,ename,job,sal) values(empsequence.NEXTVAL,?,?,?)";
 		
 		 @Autowired
 		 private DataSource ds;		 
@@ -47,5 +47,22 @@ public class DAO {
 			 	}catch(SQLException e) {
 			 		throw e;
 			 	}	 
+		 }
+		 
+		 
+		 public int insert(Employee emp) throws Exception{
+			 try(Connection con = ds.getConnection();
+					 PreparedStatement psmt = con.prepareStatement(INSERT)){
+			 
+				 psmt.setString(1, emp.getName());
+				 psmt.setString(2, emp.getJob());
+				 psmt.setDouble(3, emp.getSalary());
+				int count = psmt.executeUpdate();
+				return count;
+			 }catch(SQLException e) {
+				 throw e;
+			 }catch(Exception e) {
+				 throw e;
+			 }
 		 }
 }
