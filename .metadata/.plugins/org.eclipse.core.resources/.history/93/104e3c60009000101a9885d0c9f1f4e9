@@ -1,3 +1,0 @@
-spring.application.name=Greeting-Service-with-Qualifier
-
-app.greet= Hello, Rahman!

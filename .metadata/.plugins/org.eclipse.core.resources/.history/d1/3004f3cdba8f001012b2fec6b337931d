@@ -1,7 +1,0 @@
-package com.ng.sbeans;
-
-public class FineService {
-
-	public double calculateFine(int daysLate, double finePerDay);
-	
-}
