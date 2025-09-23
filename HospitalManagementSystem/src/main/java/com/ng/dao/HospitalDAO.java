@@ -20,6 +20,8 @@ public class HospitalDAO implements IHospitalDAO {
 	
 	@Autowired
 	private DataSource ds;
+	
+	
 	@Override
 	public List<Hospital> getHospitalByLoc(String loc1, String loc2) throws Exception{
 				

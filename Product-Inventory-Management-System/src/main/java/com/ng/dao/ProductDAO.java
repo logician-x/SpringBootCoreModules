@@ -19,18 +19,20 @@ public class ProductDAO {
 	private static final String CHECK_AVAILABILITY = "SELECT QUANTITY FROM PRODUCTS WHERE name =?";
 	private static final String GET_ALL_PRODUCTS = "SELECT,PRICE,QUANTITY FROM PRODUCTS";
     private static final String GET_INVENTORY = "SELECT SUM(QUANTITY*PRICE) FROM PRODUCTS";
+    
+    
 	@Autowired
 	private DataSource ds;
 
 	public int addStock(int amount, String name) throws Exception {
 
-		try (Connection con = ds.getConnection(); PreparedStatement psmt = con.prepareStatement(ADD_STOCK);) {
+		try (Connection con = ds.getConnection(); 
+				PreparedStatement psmt = con.prepareStatement(ADD_STOCK);) {
 
 			psmt.setInt(1, amount);
 			psmt.setString(2, name);
-			int count = psmt.executeUpdate();
-			return count;
-
+			return psmt.executeUpdate();
+		
 		} catch (SQLException se) {
 			throw se;
 		} catch (Exception e) {
@@ -101,8 +103,7 @@ public class ProductDAO {
 			throw se;
 		} catch (Exception e) {
 			throw e;
-		}
-		
+		}		
 	}
 
 }
